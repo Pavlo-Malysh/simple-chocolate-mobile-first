@@ -36,18 +36,52 @@
                                 <use href="./images/icons.svg#icon-twitter"></use>
                             </svg></a></li>
                 </ul>
+                <!-- Burger Button -->
+                <button class="burger-btn" type="button" data-menu-open>
+                    <svg class="burger-icon" width="28" height="28">
+                        <use href="./images/icons.svg#icon-burger"></use>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>
+
+    <!-- Menu -->
+    <div class="mobile-menu" data-menu>
+        <div class="mobile-menu-container">
+            <button class="mobile-menu-close" type="button" data-menu-close>
+                <svg class="mobile-menu-close-icon" width="28" height="28">
+                    <use href="./images/icons.svg#icon-x-close"></use>
+                </svg>
+            </button>
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a class="mobile-nav-item" href="" data-menu-close>Home</a></li>
+                    <li><a class="mobile-nav-item" href="#made" data-menu-close>How it's made?</a></li>
+                    <li><a class="mobile-nav-item" href="#loved" data-menu-close>Chocolate is loved</a></li>
+                </ul>
+            </nav>
+            <ul class="mobile-socials">
+                <li><a href=""><svg class="mobile-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg></a></li>
+                <li><a href=""><svg class="mobile-social-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg></a></li>
+            </ul>
+        </div>
+    </div>
 
     <section class="hero-section">
         <div class="container hero-container">
             <h1 class="hero-title">Treat yourself or a loved one to
                 our finest ingredients for a moment
                 of pure delight!</h1>
-            <button class="button-active" type="button">Buy now</button>
-            <a class="link-made" href="#made">How it's made</a>
-            <button class="button-scroll" type="button">scroll down</button>
+            <div class="hero-buttons">
+                <button class="button-active" type="button">Buy now</button>
+                <a class="link-made" href="#made">How it's made</a>
+                <button class="button-scroll" type="button">scroll down</button>
+            </div>
         </div>
     </section>
 
@@ -217,7 +251,8 @@
                         <address class="footer-address">
                             <ul class="footer-address-list">
                                 <li><a class="footer-address-link" href="tel:+380684439426">+380 (68) 443-94-26</a></li>
-                                <li><a class="footer-address-link" href="mailto:simplycthoc@gmail.com">simplycthoc@gmail.com</a></li>
+                                <li><a class="footer-address-link"
+                                        href="mailto:simplycthoc@gmail.com">simplycthoc@gmail.com</a></li>
                             </ul>
                         </address>
                     </div>
@@ -242,6 +277,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
